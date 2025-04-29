@@ -19,6 +19,17 @@ Built with:
 
 ---
 
+## Requirements
+Install these Python packages:
+
+```bash
+pip install qrcode[pil] pillow pywin32
+```
+
+> **Note:** This script is for **Windows** because it uses `pywin32` for clipboard operations.
+
+---
+
 ## Run the App
 
 ```bash
@@ -35,16 +46,6 @@ pyinstaller --noconsole --onefile QRCode.py
 ```
 
 > This will create a `.exe` file inside the `dist/` folder.
-
----
-## Requirements
-Install these Python packages:
-
-```bash
-pip install qrcode[pil] pillow pywin32
-```
-
-> **Note:** This script is for **Windows** because it uses `pywin32` for clipboard operations.
 
 ---
 
