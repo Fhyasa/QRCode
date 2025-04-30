@@ -33,7 +33,7 @@ pip install qrcode[pil] pillow pywin32
 ## Run the App
 
 ```bash
-python QRCode.exe
+python QRCode.py
 ```
 
 ---
