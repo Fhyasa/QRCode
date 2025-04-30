@@ -102,10 +102,12 @@ info_button.place(relx=1.0, x=-10, y=5, anchor="ne")
 def show_info(event):
     messagebox.showinfo(
         "Info",
+        "A QR code Generator made by Aske\n\n"
         "URL: Enter a valid web address or any text you want to encode as a QR code.\n\n"
         "Size (box size): how many pixels wide each “box” of the QR code is.\n\n"
         "Border: number of boxes around the QR code.\n\n"
-        "Larger size = higher resolution.\nMinimum border for most QR readers is 1."
+        "A larger size results in higher resolution.\n"
+        "The minimum border required by most QR readers is 1.\nA border of 4 is recommended."
     )
 
 info_button.bind("<Button-1>", show_info)
@@ -129,7 +131,7 @@ box_size_entry.grid(row=1, column=0, padx=5)
 border_label = tk.Label(settings_row, text="Border", font=("Helvetica", 10))
 border_label.grid(row=0, column=1, padx=5)
 border_entry = tk.Entry(settings_row, font=("Helvetica", 10), width=10)
-border_entry.insert(0, "1")
+border_entry.insert(0, "4")
 border_entry.grid(row=1, column=1, padx=5)
 
 generate_button = tk.Button(frame, text="Generate & Save QR Code", font=BUTTON_FONT, command=generate_qr)
